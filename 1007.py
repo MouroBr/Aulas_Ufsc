@@ -5,5 +5,5 @@ d = int(input())
 
 diferenca = (a * b) - (c * d)
 
-print('DIFERENCA = {}'.format(diferenca))
+print('DIFERENÇA = {}'.format(diferenca))
 

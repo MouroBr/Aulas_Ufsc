@@ -10,7 +10,7 @@ else:
         tipo = "Valido-Isoceles"
     else:
         tipo = "Valido-Escaleno"
-    if (pow(a, 2) + pow(b, 2)) == pow(c, 2):
+    if (a ** 2 + b ** 2) == c ** 2:
         retan = 'S'
     else:
         retan = 'N'
