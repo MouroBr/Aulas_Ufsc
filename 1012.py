@@ -1,18 +1,17 @@
-entrada = list(map(int, input().split()))
-entrada.sort()
-a, b, c = entrada
-if a + b <= c:
-    print("Invalido")
-else:
-    if a == b and b == c:
-        tipo = "Valido-Equilatero"
-    elif a == b or b == c:
-        tipo = "Valido-Isoceles"
-    else:
-        tipo = "Valido-Escaleno"
-    if (a ** 2 + b ** 2) == c ** 2:
-        retan = 'S'
-    else:
-        retan = 'N'
-    print(tipo)
-    print("Retangulo:", retan)
+Pi = 3.14159
+
+a, b, c = [float(x) for x in input().split(' ')]
+
+areaTriangulo = (a * c) / 2
+areaCirculo = Pi * c ** 2
+areaTrapezio = (a + b) / 2 * c
+areaQuadrado = b ** 2
+areaRetangulo = a * b
+
+print(f"TRIANGULO: {areaTriangulo:.3f}")
+print(f"CIRCULO  : {areaCirculo:.3f}")
+print(f"TRAPEZIO : {areaTrapezio:.3f}")
+print(f"QUADRADO : {areaQuadrado:.3f}")
+print(f"RETANGULO: {areaRetangulo:.3f}")
+
+
