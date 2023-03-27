@@ -1,37 +1,37 @@
 x = input().split()
-hi, mi, hf, mf = x
+horaInicial, minutoInicial, horaFinal, minutoFinal = x
 
-hi = int(x[0])
-mi = int(x[1])
-hf = int(x[2])
-mf = int(x[3])
+horaInicial = int(x[0])
+minutoInicial = int(x[1])
+horaFinal = int(x[2])
+minutoFinal = int(x[3])
 
-if hi < hf:
-    h = hf - hi
-    if mi < mf:
-        m = mf - mi
-    if mi > mf:
+if horaInicial < horaFinal:
+    h = horaFinal - horaInicial
+    if minutoInicial < minutoFinal:
+        m = minutoFinal - minutoInicial
+    if minutoInicial > minutoFinal:
         h = h - 1
-        m = (60 - mi) + mf
-    if mi == mf:
+        m = (60 - minutoInicial) + minutoFinal
+    if minutoInicial == minutoFinal:
         m = 0
-if hi > hf:
-    h = (24 - hi) + hf
-    if mi < mf:
-        m = mf - mi
-    if mi > mf:
+if horaInicial > horaFinal:
+    h = (24 - horaInicial) + horaFinal
+    if minutoInicial < minutoFinal:
+        m = minutoFinal - minutoInicial
+    if minutoInicial > minutoFinal:
         h = h - 1
-        m = (60 - mi) + mf
-    if mi == mf:
+        m = (60 - minutoInicial) + minutoFinal
+    if minutoInicial == minutoFinal:
         m = 0
-if hi == hf:
-    if mi < mf:
-        m = mf - mi
+if horaInicial == horaFinal:
+    if minutoInicial < minutoFinal:
+        m = minutoFinal - minutoInicial
         h = 0
-    if mi > mf:
-        m = (60 - mi) + mf
+    if minutoInicial > minutoFinal:
+        m = (60 - minutoInicial) + minutoFinal
         h = 23
-    if mi == mf:
+    if minutoInicial == minutoFinal:
         h = 24
         m = 0
     

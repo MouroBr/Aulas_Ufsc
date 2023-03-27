@@ -1,24 +1,24 @@
-x = float(input())
-if x <= 400.00:
-    s = x * 1.15
-    r = s - x
-    p = 15
-if 400.01 <= x <= 800.00:
-    s = x * 1.12
-    r = s - x
-    p = 12
-if 800.01 <= x <= 1200.00:
-    s = x * 1.10
-    r = s - x
-    p = 10
-if 1200.01 <= x <= 2000.00:
-    s = x * 1.07
-    r = s - x
-    p = 7
-if  x > 2000.00:
-    s = x * 1.04
-    r = s - x
-    p = 4
-print('Novo salario: {:.2f}'.format(s))
-print('Reajuste ganho: {:.2f}'.format(r))
-print('Em percentual: {} %'.format(p))
+wage = float(input())
+if wage <= 400.00:
+    newWage = wage * 1.15
+    readjustment = newWage - wage
+    percentage = 15
+if 400.01 <= wage <= 800.00:
+    newWage = wage * 1.12
+    readjustment = newWage - wage
+    percentage = 12
+if 800.01 <= wage <= 1200.00:
+    newWage = wage * 1.10
+    readjustment = newWage - wage
+    percentage = 10
+if 1200.01 <= wage <= 2000.00:
+    newWage = wage * 1.07
+    readjustment = newWage - wage
+    percentage = 7
+if  wage> 2000.00:
+    newWage = wage * 1.04
+    readjustment = newWage - wage
+    percentage = 4
+print('Novo salario: {:.2f}'.format(newWage))
+print('Reajuste ganho: {:.2f}'.format(readjustment))
+print('Em percentual: {} %'.format(percentage))
