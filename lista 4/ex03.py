@@ -1,19 +1,25 @@
-from time import sleep
-proceed = 'N'
+while True:
 
-while proceed == 'S':
     wage = float(input('Digite o salário: R$ '))
-    discount = (wage * 0.11)
-    if discount >= 320:
-        print(f'Desconto: R$ 320.00')
-        sleep(2)
-        
-    else:
-        print(f'Desconto: R${discount}')
-        sleep(2)
-    proceed = str(input('Deseja continuar [S] ou [N]: ').upper)
     
 
+    if wage * 0.11 <= 320:
+        discount = wage * 0.11
+        percentDiscount = 11
+    
+        
+    else:
+        discount = 320
+        percentDiscount = 320 / wage * 100
+
+    print(f'Desconto previdenciário: R$ {discount:.2f}\nPercentual de desconto: {percentDiscount}%')
 
 
-print('Tenha um bom dia!!!')
+    proceed = str(input('Deseja continuar [S] ou [N]: ')).upper()
+    if proceed == 'N':
+        break
+
+   
+
+
+
