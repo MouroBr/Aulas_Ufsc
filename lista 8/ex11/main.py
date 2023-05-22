@@ -29,4 +29,16 @@ def main():
     consultar = input("Deseja consultar as notas de algum aluno? (s/n): ")
     while consultar.lower() == "s":
         nome_consulta = input("Digite o nome do aluno: ")
-        notas
+        notas_consulta = boletim.consultar_notas(nome_consulta)
+
+        if notas_consulta is not None:
+            print(f"Notas do aluno {nome_consulta}: {notas_consulta}")
+
+        else:
+            print(f"Aluno {notas_consulta} não encontrado")
+
+        consultar = input("Deseja consultar consultar as notas de mais algum aluno? (s/n): ")
+
+
+if __name__ == '__main__':
+    main()

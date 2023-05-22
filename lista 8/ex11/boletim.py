@@ -1,5 +1,6 @@
 from aluno import Aluno
 
+
 class Boletim:
     def __init__(self):
         self.alunos = []
