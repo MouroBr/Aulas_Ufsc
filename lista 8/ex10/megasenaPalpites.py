@@ -1,5 +1,6 @@
 from numerosRandom import NumerosRandom
 
+
 class MegasenaPalpites:
     def __init__(self, quantidade_jogos):
         self.quantidade_jogos = quantidade_jogos
