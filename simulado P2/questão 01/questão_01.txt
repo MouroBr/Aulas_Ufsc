@@ -1,0 +1,20 @@
+Desenvolva um programa que indique o número de flores prontas para serem colhidas.
+Leopoldo é gerente de uma plantação de flores da Associação de Cultivo de Margaridas (ACM), um grupo
+que cultiva margaridas em grandes propriedades para abastecer floriculturas em grandes
+cidades. As margaridas são plantadas em vasos dispostos em linhas e colunas, formando
+uma espécie de grade.
+Na plantação administrada por Leopoldo existem L linhas de vasos de margaridas, cada uma
+formada por C vasos. Cada vaso (posição) indica o número de margaridas prontas para colheita.
+A colheita é sempre feita considerando o lote solicitado (onde M,N indicarão a localização
+na grade de plantação – linha e coluna respectivamente). Sua tarefa é escrever um programa
+que, dado um mapa da plantação contendo o número de margaridas prontas para venda em cada vaso, encontre
+qual o número de margaridas que podem ser colhidos por Leopoldo.
+Entrada
+A entrada contém um único conjunto de testes, que deve ser lido do teclado.
+ A primeira linha da entrada contém quatro números inteiros, L, C, M e N. L e C representam respectivamente o número de linhas (1 ≤ L ≤ 100) e de colunas (1 ≤ C ≤ 100) de vasos existentes na plantação. 
+M e N representam respectivamente o número de linhas (1 ≤ M ≤ L) e de colunas (1 ≤ N ≤ C) que se pretende fazer a colheita.
+As L linhas seguintes contêm C inteiros cada, representando número de margaridas prontas para colheita no vaso localizado naquela linha e coluna.  O preenchimento destes valores (número de margaridas por vaso) pode ser feito via teclado ou usando função randômica.
+Note que L M e C N são sempre inteiros.
+A matriz gerada deve ser impressa na tela para que seja possível verificar o resultado calculado.
+Saída
+Seu programa deve imprimir, na saída padrão, uma única linha que contém o número total de margaridas que podem ser colhidos na região indicada (linha M e coluna N).
