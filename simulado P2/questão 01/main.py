@@ -2,16 +2,16 @@ from plantacao import Plantacao
 
 
 def main():
-    L, C, M, N = map(int, input().split())
+    linhas, colunas, M, N = map(int, input().split())
 
+    plantacao = Plantacao(linhas, colunas)
 
-plantacao = Plantacao(linha, coluna)
+    plantacao.exibir_plantacao()
 
-plantacao.exibir_plantacao()
+    flores_colhidas = plantacao.colher(M, N)
 
-flores_colhidas = plantacao.colher(M, N)
+    print("Número de flores colhidas:", flores_colhidas)
 
-print("Número de flores colhidas:", flores_colhidas)
 
 if __name__ == '__main__':
     main()

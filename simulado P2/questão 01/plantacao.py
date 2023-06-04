@@ -2,13 +2,18 @@ import random
 
 
 class Plantacao:
-    def __int__(self, L, C):
-        self.linhas = L
-        self.colunas = C
-        self.vasos = [[random.randint(0, 10) for _ in range(C)] for _ in range(L)]
+    def __init__(self, linhas, colunas):
+        self.linhas = linhas
+        self.colunas = colunas
+        self.vasos = [[random.randint(0, 9) for _ in range(colunas)] for _ in range(linhas)]
 
     def colher(self, linha, coluna):
-        return self.vasos[linha - 1][coluna - 1]
+        linha -= 1
+        coluna -= 1
+        soma_linha = sum(self.vasos[linha])
+        soma_coluna = sum(self.vasos[i][coluna] for i in range(len(self.vasos)))
+        intersecao = self.vasos[linha][coluna]
+        return soma_linha + soma_coluna - intersecao
 
     def exibir_plantacao(self):
         for linha in self.vasos:
